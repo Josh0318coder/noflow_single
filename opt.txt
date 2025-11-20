@@ -1,0 +1,36 @@
+train.py 2025-11-19 11:54:57
+------------------------------ Options -------------------------------
+accumulation_steps: 2
+annotation_file_path_list: ../dataset/DAVIS/davis-dataset-vc/davis_annot.csv,/home/m11302113/桌面/Video_color/dataset/Hollywood2_Pixabay/data-vc-2023-maybex2-final/final_annot.csv,/home/m11302113/桌面/Video_color/dataset/NTIRE/ntire-dataset/ntire_annot.csv,/home/m11302113/桌面/Video_color/dataset/REDS/reds-optflow/reds_annot.csv
+batch_size: 2
+checkpoint_dir: checkpoints
+checkpoint_step: 100
+data_root_imagenet: ../dataset/ImageNet/imagenet-vc
+domain_invariant: True
+epoch: 40
+epoch_train_discriminator: 3
+ic: 4
+image_size: [224, 224]
+imagenet_pairs_file: ../dataset/pairs.txt
+load_pretrained_model: False
+lr: 3e-05
+lr_step: 1
+luminance_noise: 0.0
+permute_data: False
+pretrained_model: swinv2-cr-t-224
+pretrained_model_dir: ckpt
+real_reference_probability: 0.95
+resume: False
+resume_checkpoint_dir: 
+use_wandb: False
+video_data_root_list: ../dataset/DAVIS/davis_videos,../dataset/Hollywood2_Pixabay/images,../dataset/NTIRE/ntire_videos,../dataset/REDS/reds
+wandb_name: 
+wandb_token: 
+weight_contextual: 0.015
+weight_gan: 0.015
+weight_l1: 1.0
+weight_nonlocal_smoothness: 0.0
+weight_perceptual: 0.15
+weight_smoothness: 150.0
+workers: 0
+-------------------------------- End ---------------------------------
